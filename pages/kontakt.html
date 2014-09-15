@@ -17,6 +17,30 @@
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
 
+        <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+        
+            <fieldset>
+                <legend>Fråga</legend>
+                Ärendetyp
+                <select name="question-type">
+                    <option value="option-question">Fråga</option>
+                    <option value="option-2">Val 2</option>
+                    <option value="option-3">Val 3</option>
+                </select>
+                <br />
+                Rubrik: <input type="text" name="subject" /><br />
+                Fråga: <textarea cols="25" rows="2" name="question"></textarea>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Information om dig</legend>
+                <input type="radio" name="contact-method" value="mail" />Mail<br />
+                <input type="radio" name="contact-method" value="phone" />Telefon
+            </fieldset>
+            <input type="submit" value="Skicka frågan" />
+        
+        </form>
+
         <p>&copy; 2014 Tomas Vaedelund</p>
 
     </body>
