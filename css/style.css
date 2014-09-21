@@ -1,3 +1,5 @@
+/* colors from: https://kuler.adobe.com/sandy-stone-beach-ocean-diver-color-theme-15325/ */
+
 body {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 1em;
@@ -7,10 +9,14 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 20px;
+    min-height: 100%;
 }
 
 header {
     height: 100px;
+    background-color: #E6E2AF;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
@@ -25,13 +31,50 @@ header p {
 nav {
     float: left;
     width: 20%;
+    margin-top: 10px;
 }
 
 #content {
     float: right;
     width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
     clear: both;
+    background-color: #EFECCA;
+}
+
+/* content */
+#content h2 {
+    font-size: 1.5em;
+}
+
+/* Blog */
+#blog-entries {
+    padding-top: 10px;
+}
+
+.blog-entry {
+    padding-top: 5px;
+    background-color: rgba(239, 236, 202, 0.5);
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.blog-entry-header {
+    margin-top: 20px;
+    border-bottom: 1px dotted #002F2F;
+    font-size: 1.2em;
+    width: 100%;
+    background-image: url('pics/blog-entry.png');
+    background-repeat: no-repeat;
+    background-position: 0;
+    text-indent: 40px;
+}
+
+.blog-entry-footer {
+    font-style: italic;
+    padding-top: 5px;
 }
