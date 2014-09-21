@@ -3,45 +3,66 @@
 <html lang="sv">
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/style.css" />
         <title>Kontakt - Tomas Vaedelund</title>
     </head>
     <body>
-        <h1>Kontakt</h1>
-        
-        <p>Tomas Vaedelunds sajt</p>
-        
-        <ul>
-            <li><a href="../index.html">Start</a></li>
-            <li><a href="laborationer.html">Laborationer</a></li>
-            <li><a href="presentation.html">Presentation</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+        <div id="main-wrapper">
+    
+            <!-- Använder html5s <header></header> istället för <div id="header"></div> -->
+            <header>
+                <h1>Tomas Vaedelunds sida</h1>
+                <p>Kontakt</p>
 
-        <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                <!-- <img src="../pics/logo-2.png" id="image-logo" alt="Logo" /> -->
+            </header>
         
-            <fieldset>
-                <legend>Fråga</legend>
-                Ärendetyp
-                <select name="question-type">
-                    <option value="option-question">Fråga</option>
-                    <option value="option-2">Val 2</option>
-                    <option value="option-3">Val 3</option>
-                </select>
-                <br />
-                Rubrik: <input type="text" name="subject" /><br />
-                Fråga: <textarea cols="25" rows="2" name="question"></textarea>
-            </fieldset>
-        
-            <fieldset>
-                <legend>Information om dig</legend>
-                <label><input type="radio" name="contact-method" value="mail" />Mail</label><br />
-                <label><input type="radio" name="contact-method" value="phone" />Telefon</label>
-            </fieldset>
-            <input type="submit" value="Skicka frågan" />
-        
-        </form>
+            <!-- Använder html5s <nav></nav> istället för <div id="nav"></div> -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="laborationer.html">Laborationer</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
 
-        <p>&copy; 2014 Tomas Vaedelund</p>
+            <div id="content">
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                
+                    <fieldset>
+                        <legend>Fråga</legend>
+                        Ärendetyp
+                        <select name="question-type">
+                            <option value="option-question">Fråga</option>
+                            <option value="option-2">Val 2</option>
+                            <option value="option-3">Val 3</option>
+                        </select>
+                        <br />
+                        Rubrik: <input type="text" name="subject" /><br />
+                        Fråga: <textarea cols="25" rows="2" name="question"></textarea>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Information om dig</legend>
+                        <label><input type="radio" name="contact-method" value="mail" />Mail</label><br />
+                        <label><input type="radio" name="contact-method" value="phone" />Telefon</label>
+                    </fieldset>
+                    
+                    <input type="submit" value="Skicka frågan" />
+                
+                </form>
+            </div>
+
+            <!-- Använder html5s <footer></footer> istället för <div id="footer"></div> -->
+            <footer>
+                <p>Ansvarig för sidan är Tomas Vaedelund</p>
+                
+                <p>&copy; 2014 Tomas Vaedelund</p>
+            </footer>
+            
+        </div>
 
     </body>
 </html>

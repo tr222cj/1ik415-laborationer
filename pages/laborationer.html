@@ -3,174 +3,160 @@
 <html lang="sv">
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/style.css" />
         <title>Laborationer - Tomas Vaedelund</title>
     </head>
     <body>
-        <h1>Laborationer</h1>
-        
-        <p>Tomas Vaedelunds sajt</p>
-        
-        <ul>
-            <li><a href="../index.html">Start</a></li>
-            <li><a href="laborationer.html">Laborationer</a></li>
-            <li><a href="presentation.html">Presentation</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+        <div id="main-wrapper">
+    
+            <!-- Använder html5s <header></header> istället för <div id="header"></div> -->
+            <header>
+                <h1>Tomas Vaedelunds sida</h1>
+                <p>Laborationer</p>
 
-        <h2>Webbteknisk introduktion</h2>
+                <!-- <img src="../pics/logo-2.png" id="image-logo" alt="Logo" /> -->
+            </header>
         
-        <ul>
-            <li><a href="#heading-lab1">Laboration 1</a></li>
-            <li><a href="#heading-lab2">Laboration 2</a></li>
-        </ul>
-        
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Laboration</th>
-                    <th>Uppgift</th>
-                    <th>Status</th>
-                    <th>Redovisad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="3">1</td>
-                    <td>1</td>
-                    <td>Arbetar</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Arbetar</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Arbetar</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6">2</td>
-                    <td>1</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">Laborationsresultat gällande Tomas Vaedelund.</td>
-                </tr>
-            </tfoot>
-        </table>
-        
-        <h3 id="heading-lab1">Laboration 1</h3>
-        
-        <ol>
-            <li>Utvecklingsmiljö: Check</li>
-            <li><a href="presentation.html">Ett första dokument</a></li>
-            <li><a href="../index.html">Startsidan</a></li>
-            <li>Absoluta/Relativa sökvägar
-                <dl>
-                    <dt>1 - Vilken är den absoluta sökvägen till filen bottom.html?</dt>
-                    <dd>http://www.server.se/html/pages/bottom.html</dd>
-                </dl>
-                <dl>
-                    <dt>2 - Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
-                    <dd>pages/top.html</dd>
-                </dl>
-                <dl>
-                    <dt>3 - Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
-                    <dd>../../index.html</dd>
-                </dl>
-                <dl>
-                    <dt>4 - Vilken är den absoluta sökvägen till filen index.html?</dt>
-                    <dd>http://www.server.se<br />http://www.server.se/index.html</dd>
-                </dl>
-                <dl>
-                    <dt>5 - Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
-                    <dd>bottom.html</dd>
-                </dl>
-                <dl>
-                    <dt>6 - Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
-                    <dd>html/pages/top.html</dd>
-                </dl>
-            </li>
-            <li>Länkar och mer listor</li>
-            <li>Bilder
+            <!-- Använder html5s <nav></nav> istället för <div id="nav"></div> -->
+            <nav>
                 <ul>
-                    <li><a href="presentation.html#image-profile">Presentation - bild</a></li>
-                    <li><a href="../pics/logo.png" target="_blank">Logo.png</a></li>
-                    <li><a href="../index.html#blog-entry-3">Blogginlägg med vectorbild</a></li>
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="laborationer.html">Laborationer</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
-            </li>
-            <li>Video</li>
-            <li>Tabeller</li>
-            <li>Formulär</li>
-        </ol>
+            </nav>
 
-        <h3 id="heading-lab2">Laboration 2</h3>
+            <div id="content">
+                <h2>Webbteknisk introduktion</h2>
+                
+                <ul>
+                    <li><a href="#heading-lab1">Laboration 1</a></li>
+                    <li><a href="#heading-lab2">Laboration 2</a></li>
+                </ul>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Laboration</th>
+                            <th>Uppgift</th>
+                            <th>Status</th>
+                            <th>Redovisad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">1</td>
+                            <td>1</td>
+                            <td>Arbetar</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Arbetar</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Arbetar</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">2</td>
+                            <td>1</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Laborationsresultat gällande Tomas Vaedelund.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <h3 id="heading-lab1">Laboration 1</h3>
+                
+                <ol>
+                    <li>Utvecklingsmiljö: Check</li>
+                    <li><a href="presentation.html">Ett första dokument</a></li>
+                    <li><a href="../index.html">Startsidan</a></li>
+                    <li>Absoluta/Relativa sökvägar
+                        <dl>
+                            <dt>1 - Vilken är den absoluta sökvägen till filen bottom.html?</dt>
+                            <dd>http://www.server.se/html/pages/bottom.html</dd>
+                        </dl>
+                        <dl>
+                            <dt>2 - Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
+                            <dd>pages/top.html</dd>
+                        </dl>
+                        <dl>
+                            <dt>3 - Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
+                            <dd>../../index.html</dd>
+                        </dl>
+                        <dl>
+                            <dt>4 - Vilken är den absoluta sökvägen till filen index.html?</dt>
+                            <dd>http://www.server.se<br />http://www.server.se/index.html</dd>
+                        </dl>
+                        <dl>
+                            <dt>5 - Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
+                            <dd>bottom.html</dd>
+                        </dl>
+                        <dl>
+                            <dt>6 - Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
+                            <dd>html/pages/top.html</dd>
+                        </dl>
+                    </li>
+                    <li>Länkar och mer listor</li>
+                    <li>Bilder
+                        <ul>
+                            <li><a href="presentation.html#image-profile">Presentation - bild</a></li>
+                            <li><a href="../pics/logo.png" target="_blank">Logo.png</a></li>
+                            <li><a href="../index.html#blog-entry-3">Blogginlägg med vectorbild</a></li>
+                        </ul>
+                    </li>
+                    <li>Video</li>
+                    <li>Tabeller</li>
+                    <li>Formulär</li>
+                </ol>
+        
+                <h3 id="heading-lab2">Laboration 2</h3>
+            </div>
 
-        <p>&copy; 2014 Tomas Vaedelund</p>
+            <!-- Använder html5s <footer></footer> istället för <div id="footer"></div> -->
+            <footer>
+                <p>Ansvarig för sidan är Tomas Vaedelund</p>
+                
+                <p>&copy; 2014 Tomas Vaedelund</p>
+            </footer>
+            
+        </div>
 
     </body>
 </html>
-
-<!--
-Question 1.4.1
-http://www.server.se/html/pages/bottom.html
-
-<a href="http://www.server.se/html/pages/bottom.html">bottom</a>
-
-Question 1.4.2
-pages/top.html
-
-<a href="pages/top.html">top</a>
-
-Question 1.4.3
-../../index.html
-
-<a href="../../index.html"></a>
-
-Question 1.4.4
-http://www.server.se
-http://www.server.se/index.html
-
-<a href="http://www.server.se">index</a>
-<a href="http://www.server.se/index.html">index</a>
-
-Question 1.4.5
-bottom.html
-
-<a href="bottom.html">top</a>
-
-Question 1.4.6
-html/pages/top.html
-
-<a href="html/pages/top.html"></a>
--->
