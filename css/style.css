@@ -1,0 +1,29 @@
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    border: 1px solid black;
+    
+}
+
+nav {
+    border: 1px solid black;
+    
+}
+
+#content {
+    border: 1px solid black;
+    
+}
+
+footer {
+    border: 1px solid black;
+    
+}
