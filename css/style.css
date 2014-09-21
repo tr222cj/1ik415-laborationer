@@ -15,7 +15,7 @@ body {
 header {
     height: 100px;
     background-color: #E6E2AF;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -46,6 +46,11 @@ footer {
     background-color: #EFECCA;
 }
 
+/* a { text-decoration: none; } */
+a:link, a:visited { color: #000; }
+a:hover, a:active { color: #000; }
+/* a:hover { text-decoration: underline; } */
+
 /* content */
 #content h2 {
     font-size: 1.5em;
@@ -58,7 +63,7 @@ footer {
 
 .blog-entry {
     padding-top: 5px;
-    background-color: rgba(239, 236, 202, 0.5);
+    /* background-color: rgba(239, 236, 202, 0.5); */
     width: 100%;
     font-size: 0.8em;
 }
@@ -77,4 +82,32 @@ footer {
 .blog-entry-footer {
     font-style: italic;
     padding-top: 5px;
+}
+
+/* Menu */
+nav ul { 
+    width: 95%;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: rgba(239, 236, 202, 0.5);
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+nav ul li.active {
+    /* text-align: right; */
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(239, 236, 202, 1);
+    font-weight: bold;
 }
