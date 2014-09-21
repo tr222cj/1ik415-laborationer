@@ -17,6 +17,9 @@ header {
     background-color: #E6E2AF;
     border-radius: 10px;
     padding: 10px;
+    background-image: url('pics/logo-2.png');
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 
