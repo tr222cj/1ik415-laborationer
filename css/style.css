@@ -57,6 +57,22 @@ a:link, a:visited { color: #000; }
 a:hover, a:active { color: #000; }
 /* a:hover { text-decoration: underline; } */
 
+code {
+    font-family: courier, monospace;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
 /* content */
 #content h2 {
     font-size: 1.8em;
@@ -78,6 +94,9 @@ a:hover, a:active { color: #000; }
     text-align: justify;
 }
 
+#content dl {
+    padding-top: 0.8em;
+}
 
 #content dt {
     font-weight: bold;
@@ -106,9 +125,7 @@ a:hover, a:active { color: #000; }
 }
 
 #content img {
-    float: left;
-    padding-bottom: 0.8em;
-    padding-right: 0.8em;
+    padding: 0.8em;
 }
 
 #content table, tr, td {
@@ -121,14 +138,6 @@ a:hover, a:active { color: #000; }
 
 #content td {
     padding: 0.5em;
-}
-
-#content.left {
-    float: left;
-}
-
-#content.right {
-    float: right;
 }
 
 /* Blog */
@@ -159,6 +168,7 @@ a:hover, a:active { color: #000; }
     font-style: italic;
     padding-top: 0.5em;
     text-align: right;
+    clear: both; /* så att footer alltid kommer på ny egen rad oavsett tidigare floating */
 }
 
 /* Menu */
