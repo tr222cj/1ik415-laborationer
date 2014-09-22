@@ -29,25 +29,26 @@
             </nav>
 
             <div id="content">
-                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post" class="basic-form">
                 
                     <fieldset>
                         <legend>Fråga</legend>
-                        Ärendetyp
-                        <select name="question-type">
-                            <option value="option-question">Fråga</option>
-                            <option value="option-2">Val 2</option>
-                            <option value="option-3">Val 3</option>
-                        </select>
-                        <br />
-                        Rubrik: <input type="text" name="subject" /><br />
-                        Fråga: <textarea cols="25" rows="2" name="question"></textarea>
+                        <label>
+                            <span>Ärendetyp</span>
+                            <select name="question-type">
+                                <option value="option-question">Fråga</option>
+                                <option value="option-2">Val 2</option>
+                                <option value="option-3">Val 3</option>
+                            </select>
+                        </label>
+                        <label><span>Rubrik:</span><input type="text" name="subject" /></label>
+                        <label><span>Fråga:</span><textarea cols="25" rows="2" name="question"></textarea></label>
                     </fieldset>
                 
                     <fieldset>
-                        <legend>Information om dig</legend>
-                        <label><input type="radio" name="contact-method" value="mail" />Mail</label><br />
-                        <label><input type="radio" name="contact-method" value="phone" />Telefon</label>
+                        <legend>Välj kontaktmetod</legend>
+                        <label><input type="radio" name="contact-method" value="mail" /><span>Mail</span></label>
+                        <label><input type="radio" name="contact-method" value="phone" /><span>Telefon</span></label>
                     </fieldset>
                     
                     <input type="submit" value="Skicka frågan" />

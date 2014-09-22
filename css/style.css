@@ -198,3 +198,49 @@ nav ul li a:hover {
     background-color: rgba(239, 236, 202, 1);
     font-weight: bold;
 }
+
+/* Form */
+.basic-form {
+    padding: 0.5em;
+}
+
+.basic-form fieldset {
+    border: 1px solid #E6E2AF;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.basic-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.basic-form label>span {
+    float: left;
+    width: 15%;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.basic-form input[type="text"], .basic-form textarea, .basic-form select{
+    width: 70%;
+    height: 25px;
+    line-height:15px;
+}
+
+.basic-form textarea{
+    height:100px;
+}
+
+.basic-form select {
+    height: 30px;
+}
+
+.basic-form input[type="submit"] {
+    background-color: rgba(239, 236, 202, 0.5);
+}
+
+.basic-form input[type="submit"]:hover {
+    background-color: rgba(239, 236, 202, 1);
+}
