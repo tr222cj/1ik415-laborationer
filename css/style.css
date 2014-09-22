@@ -123,6 +123,14 @@ a:hover, a:active { color: #000; }
     padding: 0.5em;
 }
 
+#content.left {
+    float: left;
+}
+
+#content.right {
+    float: right;
+}
+
 /* Blog */
 #blog-entries {
     padding-top: 0.8em;
