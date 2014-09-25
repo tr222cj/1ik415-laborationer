@@ -22,7 +22,6 @@ header {
     background-position: right top;
 }
 
-
 header h1 {
     font-size: 2em;
     text-transform: uppercase;
@@ -49,6 +48,7 @@ footer {
     clear: both;
     background-color: #EFECCA;
     padding: 1em;
+    border-radius: 10px;
 }
 
 /* Valde till slut att visa länkar exakt som annan text men med streck under */
@@ -181,6 +181,7 @@ nav ul li {
     background-color: rgba(239, 236, 202, 0.5);
     text-align: left;
     margin-bottom: 0.5em;
+    border-radius: 10px;
 }
 
 nav ul li.active {
@@ -197,6 +198,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(239, 236, 202, 1);
     font-weight: bold;
+    border-radius: 10px;
 }
 
 /* Form */
@@ -225,12 +227,15 @@ nav ul li a:hover {
 
 .basic-form input[type="text"], .basic-form textarea, .basic-form select{
     width: 70%;
-    height: 25px;
     line-height:15px;
 }
 
+.basic-form input[type="text"] {
+    height: 25px;
+}
+
 .basic-form textarea{
-    height:100px;
+    height: 100px;
 }
 
 .basic-form select {
@@ -239,6 +244,8 @@ nav ul li a:hover {
 
 .basic-form input[type="submit"] {
     background-color: rgba(239, 236, 202, 0.5);
+    height: 25px;
+    border-radius: 10px;
 }
 
 .basic-form input[type="submit"]:hover {
