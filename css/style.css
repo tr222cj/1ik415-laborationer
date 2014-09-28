@@ -74,9 +74,16 @@ code {
 }
 
 /* content */
+#content h1 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    clear: both; /* så att rubrik alltid kommer på ny egen rad efter "floatad" img */
+}
+
 #content h2 {
     font-size: 1.8em;
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
     clear: both; /* så att rubrik alltid kommer på ny egen rad efter "floatad" img */
 }
 
@@ -90,7 +97,7 @@ code {
 #content p {
     line-height: 1.5em;
     font-size: 1em;
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
     text-align: justify;
 }
 
@@ -124,8 +131,18 @@ code {
     padding-bottom: 0.8em;
 }
 
-#content img {
+/* Ersätter denna */
+/*#content img {
     padding: 0.8em;
+}*/
+
+/* Med dessa två */
+#content img.left {
+    padding-right: 0.8em;
+}
+
+#content img.right {
+    padding-left: 0.8em;
 }
 
 #content table, tr, td {
@@ -140,20 +157,23 @@ code {
     padding: 0.5em;
 }
 
-/* Blog */
-#blog-entries {
-    padding-top: 0.8em;
+#content div.right video {
+    padding-left: 0.8em;
 }
 
+#content div.left video {
+    padding-right: 0.8em;
+}
+
+/* Blog */
 .blog-entry {
-    padding-top: 0.5em;
     /* background-color: rgba(239, 236, 202, 0.5); */
     width: 100%;
     font-size: 0.8em;
+    margin-top: 0.5em;
 }
 
 .blog-entry-header {
-    margin-top: 1.2em;
     border-bottom: 1px dotted #002F2F;
     font-size: 1.2em;
     width: 100%;
@@ -161,7 +181,6 @@ code {
     background-repeat: no-repeat;
     background-position: 0;
     text-indent: 3em;
-    margin-bottom: 0.5em;
 }
 
 .blog-entry-footer {
@@ -250,4 +269,45 @@ nav ul li a:hover {
 
 .basic-form input[type="submit"]:hover {
     background-color: rgba(239, 236, 202, 1);
+}
+
+/* PRINT */
+/* Då print enbart innehåller relativt få undantag från standard css så lägger
+jag dem här istället för att länka in en print.css på varje sida */
+@media print {
+    * {
+        /* background: transparent !important; */ /* Vill inte skriva ut bakgrunder, eller vill jag det? */
+        color: black !important; /* Svart skriver ut snabbare på de flesta skrivare */
+    }
+    
+    a {
+        text-decoration: underline; /* Förtydliga alla länkar med understreck */
+    }
+    
+    a[href]::after { /* after så att adressen kommer efter länken */
+        content: " (" attr(href) ")"; /* Skriv ut länkar i sin helhet */
+    }
+    
+    nav {
+        display: none !important; /* Dölj navigation. */
+    }
+    
+    #content {
+        width: 100% !important; /* För att fylla ut den borttagna navigationen */
+    }
+    
+    /* Bästa sättet jag kunde komma på för att dölja <video>-taggen. Hade
+    gärna sett texten där videon var, istället för under. */
+    .video-container video {
+        visibility: hidden;
+    }
+    
+    .video-container video {
+        display: none;
+    }
+
+    .video-container::after {
+        font-weight: bold;
+    	content: "Video visas inte vid utskrift.";
+    }
 }
