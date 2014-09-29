@@ -145,7 +145,7 @@ code {
     padding-left: 0.8em;
 }
 
-#content table, tr, td {
+#content table, #content tr, #content td, #content th {
     border: 1px solid black;
 }
 
@@ -153,7 +153,7 @@ code {
     margin-bottom: 1.6em;
 }
 
-#content td {
+#content th, #content td {
     padding: 0.5em;
 }
 
