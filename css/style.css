@@ -197,10 +197,12 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    background-color: rgba(239, 236, 202, 0.5);
     text-align: left;
     margin-bottom: 0.5em;
     border-radius: 10px;
+    background: url('pics/sprite.png') 0 0;
+    background-repeat: no-repeat;
+    background-color: rgba(239, 236, 202, 0.5);
 }
 
 nav ul li.active {
@@ -211,14 +213,26 @@ nav ul li.active {
 nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 0.8em;
+    padding: 0.8em 0 0.8em 2.2em;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
     background-color: rgba(239, 236, 202, 1);
     font-weight: bold;
     border-radius: 10px;
 }
+
+/* Menu sprite - Normal*/
+nav .sprite-a { background-position: 5px -40px; }
+nav .sprite-b { background-position: 5px -136px; }
+nav .sprite-c { background-position: 5px -232px; }
+nav .sprite-d { background-position: 5px -328px; }
+
+/* Menu sprite - Hover*/
+nav .sprite-a:hover { background-position: 5px 8px; }
+nav .sprite-b:hover { background-position: 5px -88px; }
+nav .sprite-c:hover { background-position: 5px -184px; }
+nav .sprite-d:hover { background-position: 5px -280px; }
 
 /* Form */
 .basic-form {
