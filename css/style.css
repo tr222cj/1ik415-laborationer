@@ -27,21 +27,16 @@ header h1 {
     text-transform: uppercase;
 }
 
-header p {
-    
-}
-
 nav {
     float: left;
     width: 20%;
-    margin-top: 0.5em;
+    padding: 0.5em 0;
 }
 
 #content {
     float: right;
     width: 80%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    padding: 0.5em 0;
 }
 
 footer {
@@ -74,74 +69,62 @@ code {
 }
 
 /* content */
+#content h1, #content h2, #content h3, #content p {
+    padding-bottom: 0.2em;
+}
+
+#content h2, #content h3 {
+    padding-top: 0.2em;
+    margin-top: 0.2em;
+}
+
 #content h1 {
     font-size: 2em;
-    padding-bottom: 0.5em;
-    clear: both; /* så att rubrik alltid kommer på ny egen rad efter "floatad" img */
 }
 
 #content h2 {
-    font-size: 1.8em;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    clear: both; /* så att rubrik alltid kommer på ny egen rad efter "floatad" img */
+    font-size: 1.75em;
 }
 
 #content h3 {
     font-size: 1.5em;
     font-style: italic;
-    margin-bottom: 0.5em;
-    clear: both; /* så att rubrik alltid kommer på ny egen rad efter "floatad" img */
 }
 
 #content p {
     line-height: 1.5em;
-    font-size: 1em;
-    /* margin-bottom: 0.5em; */
     text-align: justify;
 }
 
-#content dl {
-    padding-top: 0.8em;
+#content dl, #content ol, #content ul {
+    padding-top: 0.5em;
+}
+
+#content ol, #content ul, #content ol ul { /* nästlad lista skall dras in extra */
+    padding-left: 1.4em;
+}
+
+#content dl, #content dt, #content dd, #content li {
+    padding-bottom: 0.5em;
 }
 
 #content dt {
     font-weight: bold;
 }
 
-#content dd {
-    padding-bottom: 0.8em;
+#content ol {
+    list-style-type: decimal;
 }
 
 #content ul {
     list-style-type: disc;
-    padding-left: 1em;
 }
 
-#content ul li {
-    padding-bottom: 0.8em;
-}
-
-#content ol {
-    padding-bottom: 0.8em;
-    list-style-type: decimal;
-}
-
-#content ol li {
-    padding-bottom: 0.8em;
-}
-
-/* Ersätter denna */
-/*#content img {
-    padding: 0.8em;
-}*/
-
-/* Med dessa två */
-#content img.left {
+#content img.left, #content .left video {
     padding-right: 0.8em;
 }
 
-#content img.right {
+#content img.right, #content .right video {
     padding-left: 0.8em;
 }
 
@@ -157,37 +140,27 @@ code {
     padding: 0.5em;
 }
 
-#content div.right video {
-    padding-left: 0.8em;
-}
-
-#content div.left video {
-    padding-right: 0.8em;
-}
-
 /* Blog */
 .blog-entry {
     /* background-color: rgba(239, 236, 202, 0.5); */
-    width: 100%;
-    font-size: 0.8em;
-    margin-top: 0.5em;
+    font-size: 0.9em;
 }
 
 .blog-entry-header {
     border-bottom: 1px dotted #002F2F;
-    font-size: 1.2em;
-    width: 100%;
     background-image: url('pics/blog-entry.png');
     background-repeat: no-repeat;
     background-position: 0;
-    text-indent: 3em;
+    text-indent: 1.5em;
+    margin-bottom: 0.2em;
 }
 
 .blog-entry-footer {
     font-style: italic;
     padding-top: 0.5em;
-    text-align: right;
-    clear: both; /* så att footer alltid kommer på ny egen rad oavsett tidigare floating */
+    text-align: right !important;
+    margin-bottom: 2em;
+    border-bottom: 1px dotted #002F2F;
 }
 
 /* Menu */

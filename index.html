@@ -16,7 +16,7 @@
                 <h1>Tomas Vaedelunds sida</h1>
                 <p>Välkommen hit!</p>
 
-                <!-- <img src="../pics/logo-2.png" id="image-logo" alt="Logo" /> -->
+                <!-- <img src="css/pics/logo-2.png" id="image-logo" alt="Logo" /> -->
             </header>
         
             <!-- Använder html5s <nav></nav> istället för <div id="navigation"></div> -->
@@ -33,25 +33,25 @@
                 <h1>Kursblogg</h1>
                 
                 <!-- Blog entries -->
-                <dl id="blog-entries">
+                <div id="blog-entries">
                 
-                    <dt id="blog-entry-6" class="blog-entry blog-entry-header">Lab 3 steg 3 - Copycat</dt>
-                    <dd class="blog-entry">
+                    <div id="blog-entry-6" class="blog-entry">
+                        <h2 class="blog-entry-header">Lab 3 steg 3 - Copycat</h2>
                         <p>Uppgift: Att för en färdig html-sida skriva en css som så långt som möjligt liknar en <a href="https://uppgift-3-3-c9-tr222cj.c9.io/IE7_hela.png">skärmdump</a> i uppgiften. Här är <a href="https://uppgift-3-3-c9-tr222cj.c9.io/">resultatet</a>.</p>
-                    </dd>
-                    <dd class="blog-entry blog-entry-footer">Publicerat av: Tomas, 2014-09-29</dd>
-
-                    <dt id="blog-entry-5" class="blog-entry blog-entry-header">Lab 2 steg 7 - Gusten</dt>
-                    <dd class="blog-entry">
+                        <p class="blog-entry-footer">Publicerat av: Tomas, 2014-09-29</p>
+                    </div>
+                    
+                    <div id="blog-entry-5" class="blog-entry">
+                        <h2 class="blog-entry-header">Lab 2 steg 7 - Gusten</h2>
                         <img src="pics/gusten.jpg" alt="Gusten" class="left"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis vitae est ullamcorper dignissim. Donec vel lorem eu ante tempor ornare. Integer eget malesuada eros. Etiam at feugiat eros. Pellentesque sit amet interdum purus. Quisque sit amet nulla ac mauris accumsan placerat tempus sit amet dolor. Aliquam sit amet mollis purus, id fringilla risus. Vivamus a semper magna, quis fermentum arcu. Sed sem magna, hendrerit scelerisque augue eu, condimentum convallis nisi.</p>
                         <p>Nulla facilisi. Nulla bibendum et mi non congue. Cras fringilla luctus enim, sed rhoncus odio suscipit ut. Quisque a nibh id nunc fermentum malesuada a eu lectus. Integer a nunc lacinia, rhoncus enim at, luctus erat. Donec pharetra purus a justo suscipit, at gravida magna bibendum. Donec id purus nulla. Etiam eget nulla sit amet velit sagittis lacinia vel ac lacus. Maecenas egestas lorem in nibh viverra porttitor. Etiam dignissim quam nibh, quis faucibus augue eleifend sit amet. Ut in venenatis nisl. Aenean vel nibh molestie, fringilla turpis id, accumsan ipsum. Proin efficitur congue neque. Cras luctus magna nulla, sit amet porttitor ligula tristique dignissim. Mauris ut leo sodales, laoreet tellus non, convallis diam. Vestibulum sit amet semper ex.</p>
                         <p>Aliquam erat volutpat. Ut finibus cursus leo, sit amet sodales nisl facilisis at. Aliquam erat volutpat. Nullam consectetur lorem a lacinia commodo. Cras viverra erat cursus nibh aliquam lobortis vel quis felis. Maecenas vulputate et metus eu hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tristique sagittis mi, eu iaculis turpis mattis in. Sed varius lorem id porttitor viverra. Aliquam rutrum erat sapien, quis pretium dui pretium in. Phasellus non mi pulvinar, laoreet sem in, ultricies risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed luctus, purus et fermentum fermentum, ante ante pretium enim, ac bibendum odio ex ac ante.</p>
-                    </dd>
-                    <dd class="blog-entry blog-entry-footer">Publicerat av: Tomas, 2014-09-22</dd>
+                        <p class="blog-entry-footer">Publicerat av: Tomas, 2014-09-22</p>
+                    </div>
 
-                    <dt id="blog-entry-4" class="blog-entry blog-entry-header">Lab 1 steg 7</dt>
-                    <dd class="blog-entry">
+                    <div id="blog-entry-4" class="blog-entry">
+                    <h2 class="blog-entry-header">Lab 1 steg 7</h2>
                         <div class="video-container right">
                             <video width="320" height="240" controls> 
                                 <source src="videos/trailer_400p.ogg" type="video/ogg"> 
@@ -62,25 +62,32 @@
                         <p>[EDIT] Lägger till mer text här så att "floating" syns tydligare:</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis vitae est ullamcorper dignissim. Donec vel lorem eu ante tempor ornare. Integer eget malesuada eros. Etiam at feugiat eros. Pellentesque sit amet interdum purus. Quisque sit amet nulla ac mauris accumsan placerat tempus sit amet dolor. Aliquam sit amet mollis purus, id fringilla risus. Vivamus a semper magna, quis fermentum arcu. Sed sem magna, hendrerit scelerisque augue eu, condimentum convallis nisi.</p>
                         <p>Tack till <a href="http://www.bigbuckbunny.org/index.php/about/">Big Buck Bunny</a> för att vi får visa deras filmer.</p>
-                    </dd>
-                    <dd class="blog-entry blog-entry-footer">Publicerat av: Tomas, 2014-09-14</dd>
+                        <p class="blog-entry-footer clear">Publicerat av: Tomas, 2014-09-14</p>
+                    </div>
 
                     <!-- Third entry - probably last time I make a comment about this... -->
-                    <dt id="blog-entry-3" class="blog-entry blog-entry-header">Lab 1 steg 6</dt>
-                    <dd class="blog-entry">Skapat en <a href="pics/vector.svg" target="_blank">vectorbild</a> och länkar till den här.</dd>
-                    <dd class="blog-entry blog-entry-footer">Publicerat av: Tomas, 2014-09-14</dd>
+                    <div id="blog-entry-3" class="blog-entry">
+                        <h2 class="blog-entry-header">Lab 1 steg 6</h2>
+                        <p>Skapat en <a href="pics/vector.svg" target="_blank">vectorbild</a> och länkar till den här.</p>
+                        <p class="blog-entry-footer">Publicerat av: Tomas, 2014-09-14</p>
+                    </div>
 
                     <!-- Second entry -->
-                    <dt id="blog-entry-2" class="blog-entry blog-entry-header">Lab 1 steg 3</dt>
-                    <dd class="blog-entry">Håller som bäst på med att göra färdig steg 3 av labb 1.</dd>
-                    <dd class="blog-entry blog-entry-footer">Publicerat av: Tomas, 2014-09-14</dd>
+                    <div id="blog-entry-2" class="blog-entry">
+                        <h2 class="blog-entry-header">Lab 1 steg 3</h2>
+                        <p>Håller som bäst på med att göra färdig steg 3 av labb 1.</p>
+                        <p class="blog-entry-footer">Publicerat av: Tomas, 2014-09-14</p>
+                    </div>
 
                     <!-- First entry -->
-                    <dt id="blog-entry-1" class="blog-entry blog-entry-header">Hello world!</dt>
-                    <dd class="blog-entry">Hej världen och välkommen till min kursblogg.</dd>
-                    <dd class="blog-entry blog-entry-footer">Publicerat av: Tomas, 2014-09-14</dd>
-                    
-                </dl>
+                    <div id="blog-entry-1" class="blog-entry">
+                        <h2 class="blog-entry-header">Hello world!</h2>
+                        <p>Hej världen och välkommen till min kursblogg.</p>
+                        <p class="blog-entry-footer">Publicerat av: Tomas, 2014-09-14</p>
+                    </div>
+
+                </div>
+
             </div>
             
             <!-- Använder html5s <footer></footer> istället för <div id="footer"></div> -->
