@@ -141,12 +141,12 @@ code {
 }
 
 /* Blog */
-.blog-entry {
+#content .blog-entry {
     /* background-color: rgba(239, 236, 202, 0.5); */
     font-size: 0.9em;
 }
 
-.blog-entry-header {
+#content .blog-entry-header {
     border-bottom: 1px dotted #002F2F;
     background-image: url('pics/blog-entry.png');
     background-repeat: no-repeat;
@@ -155,10 +155,10 @@ code {
     margin-bottom: 0.2em;
 }
 
-.blog-entry-footer {
+#content .blog-entry-footer {
     font-style: italic;
     padding-top: 0.5em;
-    text-align: right !important;
+    text-align: right;
     margin-bottom: 2em;
     border-bottom: 1px dotted #002F2F;
 }
@@ -196,16 +196,16 @@ nav ul li:hover {
 }
 
 /* Menu sprite - Normal*/
-nav .sprite-a { background-position: 5px -40px; }
-nav .sprite-b { background-position: 5px -136px; }
-nav .sprite-c { background-position: 5px -232px; }
-nav .sprite-d { background-position: 5px -328px; }
+nav .sprite-index { background-position: 5px -40px; }
+nav .sprite-labs { background-position: 5px -136px; }
+nav .sprite-presentation { background-position: 5px -232px; }
+nav .sprite-contact { background-position: 5px -328px; }
 
 /* Menu sprite - Hover*/
-nav .sprite-a:hover { background-position: 5px 8px; }
-nav .sprite-b:hover { background-position: 5px -88px; }
-nav .sprite-c:hover { background-position: 5px -184px; }
-nav .sprite-d:hover { background-position: 5px -280px; }
+nav .sprite-index:hover, nav .sprite-index.active { background-position: 5px 8px; }
+nav .sprite-labs:hover, nav .sprite-labs.active { background-position: 5px -88px; }
+nav .sprite-presentation:hover, nav .sprite-presentation.active { background-position: 5px -184px; }
+nav .sprite-contact:hover, nav .sprite-contact.active { background-position: 5px -280px; }
 
 /* Form */
 .basic-form {
@@ -262,9 +262,10 @@ nav .sprite-d:hover { background-position: 5px -280px; }
 /* Då print enbart innehåller relativt få undantag från standard css så lägger
 jag dem här istället för att länka in en print.css på varje sida */
 @media print {
-    * {
+    body {
         /* background: transparent !important; */ /* Vill inte skriva ut bakgrunder, eller vill jag det? */
-        color: black !important; /* Svart skriver ut snabbare på de flesta skrivare */
+        color: black; /* Svart skriver ut snabbare på de flesta skrivare */
+        font-family: "Times New Roman", serif; /* TNR finns på de flesta skrivare */
     }
     
     a {
@@ -276,11 +277,11 @@ jag dem här istället för att länka in en print.css på varje sida */
     }
     
     nav {
-        display: none !important; /* Dölj navigation. */
+        display: none; /* Dölj navigation. */
     }
     
     #content {
-        width: 100% !important; /* För att fylla ut den borttagna navigationen */
+        width: 100%; /* För att fylla ut den borttagna navigationen */
     }
     
     /* Bästa sättet jag kunde komma på för att dölja <video>-taggen. Hade
