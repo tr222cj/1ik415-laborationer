@@ -1,291 +1,300 @@
 /* colors from: https://kuler.adobe.com/sandy-stone-beach-ocean-diver-color-theme-15325/ */
 
-body {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 100%;
-}
-
-#main-wrapper {
-    max-width: 62em;
-    margin: 0 auto;
-    margin-top: 1.2em;
-    min-height: 100%; /* Fungerar inte som jag tänkte mig, att #container minst skulle täcka hela sidan */
-}
-
-header {
-    height: 6em;
-    background-color: #E6E2AF;
-    border-radius: 0.8em;
-    padding: 0.8em;
-    background-image: url('pics/logo-2.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-}
-
-header h1 {
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-nav {
-    float: left;
-    width: 20%;
-    padding: 0.5em 0;
-}
-
-#content {
-    float: right;
-    width: 80%;
-    padding: 0.5em 0;
-}
-
-footer {
-    clear: both;
-    background-color: #EFECCA;
-    padding: 1em;
-    border-radius: 10px;
-}
-
-/* Valde till slut att visa länkar exakt som annan text men med streck under */
-/* a { text-decoration: none; } */
-a:link, a:visited { color: #000; }
-a:hover, a:active { color: #000; }
-/* a:hover { text-decoration: underline; } */
-
-code {
-    font-family: courier, monospace;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.clear {
-    clear: both;
-}
-
-/* content */
-#content h1, #content h2, #content h3, #content p {
-    padding-bottom: 0.2em;
-}
-
-#content h2, #content h3 {
-    padding-top: 0.2em;
-    margin-top: 0.2em;
-}
-
-#content h1 {
-    font-size: 2em;
-}
-
-#content h2 {
-    font-size: 1.75em;
-}
-
-#content h3 {
-    font-size: 1.5em;
-    font-style: italic;
-}
-
-#content p {
-    line-height: 1.5em;
-    text-align: justify;
-}
-
-#content dl, #content ol, #content ul {
-    padding-top: 0.5em;
-}
-
-#content ol, #content ul, #content ol ul { /* nästlad lista skall dras in extra */
-    padding-left: 1.4em;
-}
-
-#content dl, #content dt, #content dd, #content li {
-    padding-bottom: 0.5em;
-}
-
-#content dt {
-    font-weight: bold;
-}
-
-#content ol {
-    list-style-type: decimal;
-}
-
-#content ul {
-    list-style-type: disc;
-}
-
-#content img.left, #content .left video {
-    padding-right: 0.8em;
-}
-
-#content img.right, #content .right video {
-    padding-left: 0.8em;
-}
-
-#content table, #content tr, #content td, #content th {
-    border: 1px solid black;
-}
-
-#content table {
-    margin-bottom: 1.6em;
-}
-
-#content th, #content td {
-    padding: 0.5em;
-}
-
-/* Blog */
-#content .blog-entry {
-    /* background-color: rgba(239, 236, 202, 0.5); */
-    font-size: 0.9em;
-}
-
-#content .blog-entry-header {
-    border-bottom: 1px dotted #002F2F;
-    background-image: url('pics/blog-entry.png');
-    background-repeat: no-repeat;
-    background-position: 0;
-    text-indent: 1.5em;
-    margin-bottom: 0.2em;
-}
-
-#content .blog-entry-footer {
-    font-style: italic;
-    padding-top: 0.5em;
-    text-align: right;
-    margin-bottom: 2em;
-    border-bottom: 1px dotted #002F2F;
-}
-
-/* Menu */
-nav ul { 
-    width: 95%;
-}
-
-nav ul li {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 0.5em;
-    border-radius: 10px;
-    background: url('pics/sprite.png') 0 0;
-    background-repeat: no-repeat;
-    background-color: rgba(239, 236, 202, 0.5);
-}
-
-nav ul li.active {
-    /* text-align: right; */
-    font-weight: bold;
-}
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 0.8em 0 0.8em 2.2em;
-}
-
-nav ul li:hover {
-    background-color: rgba(239, 236, 202, 1);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-/* Menu sprite - Normal*/
-nav .sprite-index { background-position: 5px -40px; }
-nav .sprite-labs { background-position: 5px -136px; }
-nav .sprite-presentation { background-position: 5px -232px; }
-nav .sprite-contact { background-position: 5px -328px; }
-
-/* Menu sprite - Hover*/
-nav .sprite-index:hover, nav .sprite-index.active { background-position: 5px 8px; }
-nav .sprite-labs:hover, nav .sprite-labs.active { background-position: 5px -88px; }
-nav .sprite-presentation:hover, nav .sprite-presentation.active { background-position: 5px -184px; }
-nav .sprite-contact:hover, nav .sprite-contact.active { background-position: 5px -280px; }
-
-/* Form */
-.basic-form {
-    padding: 0.5em;
-}
-
-.basic-form fieldset {
-    border: 1px solid #E6E2AF;
-    border-radius: 10px;
-    padding: 0.5em;
-    margin-bottom: 1em;
-}
-
-.basic-form label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-.basic-form label>span {
-    float: left;
-    width: 15%;
-    text-align: right;
-    margin-right: 0.5em;
-}
-
-.basic-form input[type="text"], .basic-form textarea, .basic-form select{
-    width: 70%;
-    line-height:15px;
-}
-
-.basic-form input[type="text"] {
-    height: 25px;
-}
-
-.basic-form textarea{
-    height: 100px;
-}
-
-.basic-form select {
-    height: 30px;
-}
-
-.basic-form input[type="submit"] {
-    background-color: rgba(239, 236, 202, 0.5);
-    height: 25px;
-    border-radius: 10px;
-}
-
-.basic-form input[type="submit"]:hover {
-    background-color: rgba(239, 236, 202, 1);
-}
-
-/* PRINT */
-/* Då print enbart innehåller relativt få undantag från standard css så lägger
-jag dem här istället för att länka in en print.css på varje sida */
-@media print {
+/* This section applies to all medias and screen sizes. Exceptions in separate sections below. */
+@media all {
     body {
-        /* background: transparent !important; */ /* Vill inte skriva ut bakgrunder, eller vill jag det? */
-        color: black; /* Svart skriver ut snabbare på de flesta skrivare */
-        font-family: "Times New Roman", serif; /* TNR finns på de flesta skrivare */
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 100%;
     }
     
-    a {
-        text-decoration: underline; /* Förtydliga alla länkar med understreck */
+    #main-wrapper {
+        max-width: 1000px;
+        min-width: 350px;
+        margin: 0 auto;
+        margin-top: 1.2em;
+        /* min-height: 100%; */ /* Doesn't work as I intened, should cover the entire page height but doesn't */
     }
     
-    a[href]::after { /* after så att adressen kommer efter länken */
-        content: " (" attr(href) ")"; /* Skriv ut länkar i sin helhet */
+    header {
+        height: 6em;
+        background-color: #E6E2AF;
+        border-radius: 0.8em;
+        padding: 0.8em;
+        background-image: url('pics/logo-2.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    
+    header h1 {
+        font-size: 2em;
+        text-transform: uppercase;
     }
     
     nav {
-        display: none; /* Dölj navigation. */
+        float: left;
+        width: 20%;
+        padding: 0.5em 0;
     }
     
     #content {
-        width: 100%; /* För att fylla ut den borttagna navigationen */
+        float: right;
+        width: 80%;
+        padding: 0.5em 0;
     }
     
-    /* Bästa sättet jag kunde komma på för att dölja <video>-taggen. Hade
-    gärna sett texten där videon var, istället för under. */
+    footer {
+        clear: both;
+        background-color: #EFECCA;
+        padding: 1em;
+        border-radius: 10px;
+    }
+    
+    /* In the end decided to show links as other text but underlined */
+    /* a { text-decoration: none; } */
+    a:link, a:visited { color: #000; }
+    a:hover, a:active { color: #000; }
+    /* a:hover { text-decoration: underline; } */
+    
+    code {
+        font-family: courier, monospace;
+    }
+    
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    /* content */
+    #content h1, #content h2, #content h3, #content p {
+        padding-bottom: 0.2em;
+    }
+    
+    #content h2, #content h3 {
+        padding-top: 0.2em;
+        margin-top: 0.2em;
+    }
+    
+    #content h1 {
+        font-size: 2em;
+    }
+    
+    #content h2 {
+        font-size: 1.75em;
+    }
+    
+    #content h3 {
+        font-size: 1.5em;
+        font-style: italic;
+    }
+    
+    #content p {
+        line-height: 1.5em;
+        text-align: justify;
+    }
+    
+    #content dl, #content ol, #content ul {
+        padding-top: 0.5em;
+    }
+    
+    #content ol, #content ul, #content ol ul { /* nested list is intended a bit more */
+        padding-left: 1.4em;
+    }
+    
+    #content dl, #content dt, #content dd, #content li {
+        padding-bottom: 0.5em;
+    }
+    
+    #content dt {
+        font-weight: bold;
+    }
+    
+    #content ol {
+        list-style-type: decimal;
+    }
+    
+    #content ul {
+        list-style-type: disc;
+    }
+    
+    #content img.left, #content .left video {
+        padding-right: 0.8em;
+    }
+    
+    #content img.right, #content .right video {
+        padding-left: 0.8em;
+    }
+    
+    #content table, #content tr, #content td, #content th {
+        border: 1px solid black;
+    }
+    
+    #content table {
+        margin-bottom: 1.6em;
+    }
+    
+    #content th, #content td {
+        padding: 0.5em;
+    }
+    
+    /* Blog */
+    #content .blog-entry {
+        /* background-color: rgba(239, 236, 202, 0.5); */
+        font-size: 0.9em;
+    }
+    
+    #content .blog-entry-header {
+        border-bottom: 1px dotted #002F2F;
+        background-image: url('pics/blog-entry.png');
+        background-repeat: no-repeat;
+        background-position: 0;
+        text-indent: 1.5em;
+        margin-bottom: 0.2em;
+    }
+    
+    #content .blog-entry-footer {
+        font-style: italic;
+        padding-top: 0.5em;
+        text-align: right;
+        margin-bottom: 2em;
+        border-bottom: 1px dotted #002F2F;
+    }
+    
+    /* Menu */
+    nav ul { 
+        width: 95%;
+    }
+    
+    nav ul li {
+        list-style: none;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+    
+    nav ul li.active {
+        /* text-align: right; */
+        font-weight: bold;
+    }
+    
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.8em 0 0.8em 2.2em;
+        border-radius: 10px;
+        background: url('pics/sprite.png') 0 0;
+        background-repeat: no-repeat;
+        background-color: rgba(239, 236, 202, 0.5);
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(239, 236, 202, 1);
+        text-decoration: underline;
+        border-radius: 10px;
+    }
+    
+    /* Menu sprite - Normal*/
+    nav .sprite-index { background-position: 5px -40px; }
+    nav .sprite-labs { background-position: 5px -136px; }
+    nav .sprite-presentation { background-position: 5px -232px; }
+    nav .sprite-contact { background-position: 5px -328px; }
+    
+    /* Menu sprite - Hover*/
+    nav .sprite-index:hover, nav .sprite-index.active { background-position: 5px 8px; }
+    nav .sprite-labs:hover, nav .sprite-labs.active { background-position: 5px -88px; }
+    nav .sprite-presentation:hover, nav .sprite-presentation.active { background-position: 5px -184px; }
+    nav .sprite-contact:hover, nav .sprite-contact.active { background-position: 5px -280px; }
+    
+    /* Form */
+    .basic-form {
+        padding: 0.5em;
+    }
+    
+    .basic-form fieldset {
+        border: 1px solid #E6E2AF;
+        border-radius: 10px;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+    
+    .basic-form label {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    
+    .basic-form label>span {
+        float: left;
+        width: 15%;
+        text-align: right;
+        margin-right: 0.5em;
+    }
+    
+    .basic-form input[type="text"], .basic-form textarea, .basic-form select{
+        width: 70%;
+        line-height:15px;
+    }
+    
+    .basic-form input[type="text"] {
+        height: 25px;
+    }
+    
+    .basic-form textarea{
+        height: 100px;
+    }
+    
+    .basic-form select {
+        height: 30px;
+    }
+    
+    .basic-form input[type="submit"] {
+        background-color: rgba(239, 236, 202, 0.5);
+        height: 25px;
+        border-radius: 10px;
+    }
+    
+    .basic-form input[type="submit"]:hover {
+        background-color: rgba(239, 236, 202, 1);
+    }
+    
+    /* Responsive UI */
+    img, video {
+        max-width: 100%;
+    }
+}
+
+/* PRINT */
+/* Print contanins just a few exceptiosn from the main section, therefore I
+put this in the same file as the rest so I don't have to edit each page. */
+@media print {
+    body {
+        /* background: transparent !important; */ /* Dont want to print background, or do I? */
+        color: black; /* Black text prints faster on most printers */
+        font-family: "Times New Roman", serif; /* TNR is a common font on most printers */
+    }
+    
+    a {
+        text-decoration: underline; /* Emphasize links but unerlining them */
+    }
+    
+    a[href]::after { /* ::after = text After the actual link */
+        content: " (" attr(href) ")"; /* Print the entire href */
+    }
+    
+    nav {
+        display: none; /* Hide menu */
+    }
+    
+    #content {
+        width: 100%; /* Content should now fill the space that menu previously occupied */
+    }
+    
+    /* Best way I found to hide the <video> tag. Text should probably replace the video
+    but this works to */
     .video-container video {
         visibility: hidden;
     }
@@ -297,5 +306,82 @@ jag dem här istället för att länka in en print.css på varje sida */
     .video-container::after {
         font-weight: bold;
     	content: "Video visas inte vid utskrift.";
+    }
+}
+
+/* "normal" devices - less than 1000px */
+@media screen and (max-width: 1000px) and (min-device-width: 481px) {
+    nav {
+        float: none;
+        width: 100%;
+    }
+    
+    #content {
+        float: none;
+        width: 100%;
+    }
+    
+     nav ul { 
+        width: 100%;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        display: inline-block;
+        padding-right: 2em;
+    }
+}
+
+/* "normal" devices - less than 1000px */
+@media screen and (max-width: 580px) and (min-device-width: 481px) {
+    nav {
+        float: none;
+        width: 100%;
+    }
+    
+    #content {
+        float: none;
+        width: 100%;
+    }
+    
+     nav ul { 
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding-right: 2em;
+    }
+}
+
+/* mobile devices */
+@media only screen and (max-device-width: 480px) {
+    nav {
+        float: none;
+        width: 100%;
+    }
+    
+    #content {
+        float: none;
+        width: 100%;
+    }
+    
+     nav ul { 
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+    }
+    
+    nav ul li a {
+        display: block;
     }
 }
