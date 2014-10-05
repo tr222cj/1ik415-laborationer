@@ -226,19 +226,19 @@
         margin-bottom: 0.5em;
     }
     
-    .contact-form label>span {
+    .contact-form label > span {
         float: left;
         width: 15%;
         text-align: right;
         margin-right: 0.5em;
     }
     
-    .contact-form input[type="text"], .contact-form textarea, .contact-form select{
+    .contact-form input[type="text"], .contact-form textarea, .contact-form select, .contact-form input[type="email"], .contact-form input[type="tel"] {
         width: 70%;
         line-height:15px;
     }
     
-    .contact-form input[type="text"] {
+    .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"] {
         height: 25px;
     }
     
@@ -359,12 +359,12 @@ put this in the same file as the rest so I don't have to edit each page. */
         padding-right: 2em;
     }
 
-    .contact-form label>span {
+    .contact-form label > span {
         float: none;
         width: 100%;
     }
      
-    .contact-form input[type="text"], .contact-form textarea, .contact-form select{
+    .contact-form input[type="text"], .contact-form textarea, .contact-form select, .contact-form input[type="email"], .contact-form input[type="tel"] {
         width: 100%;
     }
 
@@ -409,12 +409,12 @@ put this in the same file as the rest so I don't have to edit each page. */
         display: block;
     }
     
-    .contact-form label>span {
+    .contact-form label > span {
         float: none;
         width: 100%;
     }
      
-    .contact-form input[type="text"], .contact-form textarea, .contact-form select{
+    .contact-form input[type="text"], .contact-form textarea, .contact-form select, .contact-form input[type="email"], .contact-form input[type="tel"] {
         width: 100%;
     }
 
