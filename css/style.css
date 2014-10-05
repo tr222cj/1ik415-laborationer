@@ -9,20 +9,19 @@
     
     #main-wrapper {
         max-width: 1000px;
-        min-width: 350px;
         margin: 0 auto;
         margin-top: 1.2em;
         /* min-height: 100%; */ /* Doesn't work as I intened, should cover the entire page height but doesn't */
     }
     
     header {
-        height: 6em;
+        height: 100px;
         background-color: #E6E2AF;
         border-radius: 0.8em;
         padding: 0.8em;
-        background-image: url('pics/logo-2.png');
-        background-repeat: no-repeat;
-        background-position: right top;
+        /* background-image: url('pics/logo-2.png'); */
+        /* background-repeat: no-repeat; */
+        /* background-position: right top; */
     }
     
     header h1 {
@@ -94,8 +93,8 @@
         font-style: italic;
     }
     
-    #content p {
-        line-height: 1.5em;
+    #content p, #content dd {
+        line-height: 1.2em;
         text-align: justify;
     }
     
@@ -146,7 +145,7 @@
     /* Blog */
     #content .blog-entry {
         /* background-color: rgba(239, 236, 202, 0.5); */
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
     }
     
     #content .blog-entry-header {
@@ -177,7 +176,7 @@
         margin-bottom: 0.5em;
     }
     
-    nav ul li.active {
+    nav ul li a.active {
         /* text-align: right; */
         font-weight: bold;
     }
@@ -185,7 +184,7 @@
     nav ul li a {
         display: block;
         text-decoration: none;
-        padding: 0.8em 0 0.8em 2.2em;
+        padding: 10px 0 10px 40px;
         border-radius: 10px;
         background: url('pics/sprite.png') 0 0;
         background-repeat: no-repeat;
@@ -211,53 +210,53 @@
     nav .sprite-contact:hover, nav .sprite-contact.active { background-position: 5px -280px; }
     
     /* Form */
-    .basic-form {
+    .contact-form {
         padding: 0.5em;
     }
     
-    .basic-form fieldset {
+    .contact-form fieldset {
         border: 1px solid #E6E2AF;
         border-radius: 10px;
         padding: 0.5em;
         margin-bottom: 1em;
     }
     
-    .basic-form label {
+    .contact-form label {
         display: block;
         margin-bottom: 0.5em;
     }
     
-    .basic-form label>span {
+    .contact-form label>span {
         float: left;
         width: 15%;
         text-align: right;
         margin-right: 0.5em;
     }
     
-    .basic-form input[type="text"], .basic-form textarea, .basic-form select{
+    .contact-form input[type="text"], .contact-form textarea, .contact-form select{
         width: 70%;
         line-height:15px;
     }
     
-    .basic-form input[type="text"] {
+    .contact-form input[type="text"] {
         height: 25px;
     }
     
-    .basic-form textarea{
+    .contact-form textarea{
         height: 100px;
     }
     
-    .basic-form select {
+    .contact-form select {
         height: 30px;
     }
     
-    .basic-form input[type="submit"] {
+    .contact-form input[type="submit"] {
         background-color: rgba(239, 236, 202, 0.5);
         height: 25px;
         border-radius: 10px;
     }
     
-    .basic-form input[type="submit"]:hover {
+    .contact-form input[type="submit"]:hover {
         background-color: rgba(239, 236, 202, 1);
     }
     
@@ -359,10 +358,35 @@ put this in the same file as the rest so I don't have to edit each page. */
         display: block;
         padding-right: 2em;
     }
+
+    .contact-form label>span {
+        float: none;
+        width: 100%;
+    }
+     
+    .contact-form input[type="text"], .contact-form textarea, .contact-form select{
+        width: 100%;
+    }
+
+}
+
+/* "normal" devices - less than 360px */
+@media screen and (max-width: 360px) and (min-device-width: 481px) {
+    body {
+        font-size: 70%;
+    }
+    
+    img, video {
+        max-width: 50%;
+    }
 }
 
 /* mobile devices */
 @media only screen and (max-device-width: 480px) {
+    #main-wrapper {
+        padding: 0 0.5em;
+    }
+
     nav {
         float: none;
         width: 100%;
@@ -383,5 +407,18 @@ put this in the same file as the rest so I don't have to edit each page. */
     
     nav ul li a {
         display: block;
+    }
+    
+    .contact-form label>span {
+        float: none;
+        width: 100%;
+    }
+     
+    .contact-form input[type="text"], .contact-form textarea, .contact-form select{
+        width: 100%;
+    }
+
+    img, video {
+        max-width: 50%;
     }
 }
