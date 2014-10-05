@@ -70,6 +70,11 @@
         clear: both;
     }
     
+    /* Responsive UI */
+    img, video {
+        max-width: 100%;
+    }
+
     /* content */
     #content h1, #content h2, #content h3, #content p {
         padding-bottom: 0.2em;
@@ -100,9 +105,10 @@
     
     #content dl, #content ol, #content ul {
         padding-top: 0.5em;
+        list-style-position: inside;
     }
     
-    #content ol, #content ul, #content ol ul { /* nested list is intended a bit more */
+    #content ol ul { /* nested list is intended a bit more */
         padding-left: 1.4em;
     }
     
@@ -259,11 +265,6 @@
     .contact-form input[type="submit"]:hover {
         background-color: rgba(239, 236, 202, 1);
     }
-    
-    /* Responsive UI */
-    img, video {
-        max-width: 100%;
-    }
 }
 
 /* PRINT */
@@ -376,7 +377,7 @@ put this in the same file as the rest so I don't have to edit each page. */
         font-size: 70%;
     }
     
-    img, video {
+    img {
         max-width: 50%;
     }
 }
