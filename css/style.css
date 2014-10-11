@@ -266,6 +266,14 @@
     .contact-form input[type="submit"]:hover {
         background-color: rgba(239, 236, 202, 1);
     }
+    
+    /* hCard */
+    .vcard {
+        width: 50%;
+        line-height: 1.5em;
+        margin: 1em 0;
+        padding: 0.5em;
+    }
 }
 
 /* PRINT */
