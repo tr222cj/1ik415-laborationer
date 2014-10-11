@@ -17,6 +17,16 @@
         <link rel="apple-touch-icon" sizes="144x144" href="../pics/apple-touch-icon-144x144.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="../pics/apple-touch-icon-152x152.png" />
         <title>Laborationer - Tomas Vaedelund</title>
+        <script>
+            document.createElement("header" );
+            document.createElement("footer" );
+            document.createElement("section"); 
+            document.createElement("aside"  );
+            document.createElement("nav"    );
+            document.createElement("article"); 
+            document.createElement("hgroup" ); 
+            document.createElement("time"   );
+        </script>
     </head>
     <body>
         <div id="main-wrapper">
@@ -38,7 +48,10 @@
                 </ul>
             </nav>
 
-            <div id="content">
+            <!-- Använder html5s <main></main> istället för <div id="main"></div> -->
+            <!-- Från w3.org: Authors are advised to use ARIA role="main" attribute on the main element until user agents implement the required role mapping. -->
+            <main role="main">
+            
                 <h1>Webbteknisk introduktion</h1>
                 
                 <ul>
@@ -47,7 +60,7 @@
                     <li><a href="#heading-lab3">Laboration 3</a></li>
                     <li><a href="#heading-lab4">Laboration 4</a></li>
                 </ul>
-                
+
                 <table border="1">
                     <thead>
                         <tr>
@@ -150,6 +163,12 @@
                             <td>4</td>
                             <td>#</td>
                             <td>Klar</td>
+                            <td>Godkänd</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>#</td>
+                            <td>Pågår</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -197,18 +216,23 @@
         
                 <h2 id="heading-lab2">Laboration 2</h2>
                 
+                <ul>
+                    <li><a href="../index.html#blog-entry-5">Blogginlägg Gusten</a></li>
+                </ul>
+
                 <h2 id="heading-lab3">Laboration 3</h2>
                 
-                <ol>
+                <ul>
                     <li><a href="https://uppgift-3-3-c9-tr222cj.c9.io/">Copycat</a></li>
-                </ol>
+                </ul>
 
                 <h2 id="heading-lab4">Laboration 4</h2>
 
                 <ul>
                     <li><a href="../index.html#blog-entry-7">Blogginlägg för mobila enheter</a></li>
                 </ul>
-            </div>
+                
+            </main>
 
             <!-- Använder html5s <footer></footer> istället för <div id="footer"></div> -->
             <footer>

@@ -14,36 +14,34 @@
         /* min-height: 100%; */ /* Doesn't work as I intened, should cover the entire page height but doesn't */
     }
     
-    #main-wrapper > header {
+    header {
         height: 100px;
         background-color: #E6E2AF;
         border-radius: 0.8em;
         padding: 0.8em;
-        /*
-        background-image: url('pics/logo-2.png');
-        background-repeat: no-repeat;
-        background-position: right top;
-        */
+        /* background-image: url('pics/logo-2.png'); */
+        /* background-repeat: no-repeat; */
+        /* background-position: right top; */
     }
     
-    #main-wrapper > header h1 {
+    header h1 {
         font-size: 2em;
         text-transform: uppercase;
     }
     
-    #main-wrapper > nav {
+    nav {
         float: left;
         width: 20%;
         padding: 0.5em 0;
     }
     
-    main {
+    #content {
         float: right;
         width: 80%;
         padding: 0.5em 0;
     }
     
-    #main-wrapper > footer {
+    footer {
         clear: both;
         background-color: #EFECCA;
         padding: 1em;
@@ -77,82 +75,87 @@
         max-width: 100%;
     }
 
-    /* main */
-    main h1, main h2, main h3, main p {
+    /* content */
+    #content h1, #content h2, #content h3, #content p {
         padding-bottom: 0.2em;
     }
     
-    main h2, main h3 {
+    #content h2, #content h3 {
         padding-top: 0.2em;
         margin-top: 0.2em;
     }
     
-    main h1 {
+    #content h1 {
         font-size: 2em;
     }
     
-    main h2 {
+    #content h2 {
         font-size: 1.75em;
     }
     
-    main h3 {
+    #content h3 {
         font-size: 1.5em;
         font-style: italic;
     }
     
-    main p, main dd {
+    #content p, #content dd {
         line-height: 1.2em;
         text-align: justify;
     }
-
-    main dl, main ol, main ul {
+    
+    #content dl, #content ol, #content ul {
         padding-top: 0.5em;
         list-style-position: inside;
     }
     
-    main ol ul { /* nested list is intended a bit more */
+    #content ol ul { /* nested list is intended a bit more */
         padding-left: 1.4em;
     }
     
-    main dl, main dt, main dd, main li {
+    #content dl, #content dt, #content dd, #content li {
         padding-bottom: 0.5em;
     }
     
-    main dt {
+    #content dt {
         font-weight: bold;
     }
     
-    main ol {
+    #content ol {
         list-style-type: decimal;
     }
     
-    main ul {
+    #content ul {
         list-style-type: disc;
     }
     
-    main img.left, main .left video {
+    #content img.left, #content .left video {
         padding-right: 0.8em;
     }
     
-    main img.right, main .right video {
+    #content img.right, #content .right video {
         padding-left: 0.8em;
     }
     
-    main table, main tr, main td, main th {
+    #content table, #content tr, #content td, #content th {
         border: 1px solid black;
     }
     
-    main table {
+    #content table {
         margin-bottom: 1.6em;
     }
     
-    main th, main td {
+    #content th, #content td {
         padding: 0.5em;
     }
     
     /* Blog */
-    main .blog-entry-header {
-        border-bottom: 1px dashed #000000;
+    #content .blog-entry {
+        /* background-color: rgba(239, 236, 202, 0.5); */
+        /* font-size: 0.9em; */
+    }
+    
+    #content .blog-entry-header {
+        border-bottom: 1px dotted #002F2F;
         background-image: url('pics/blog-entry.png');
         background-repeat: no-repeat;
         background-position: 0;
@@ -160,16 +163,12 @@
         margin-bottom: 0.2em;
     }
     
-    main footer {
-        clear: both;
-    }
-
-    main footer p {
+    #content .blog-entry-footer {
         font-style: italic;
         padding-top: 0.5em;
         text-align: right;
         margin-bottom: 2em;
-        border-bottom: 1px dashed #000000;
+        border-bottom: 1px dotted #002F2F;
     }
     
     /* Menu */
@@ -290,7 +289,7 @@ put this in the same file as the rest so I don't have to edit each page. */
         display: none; /* Hide menu */
     }
     
-    main {
+    #content {
         width: 100%; /* Content should now fill the space that menu previously occupied */
     }
     
@@ -317,7 +316,7 @@ put this in the same file as the rest so I don't have to edit each page. */
         width: 100%;
     }
     
-    main {
+    #content {
         float: none;
         width: 100%;
     }
@@ -343,7 +342,7 @@ put this in the same file as the rest so I don't have to edit each page. */
         width: 100%;
     }
     
-    main {
+    #content {
         float: none;
         width: 100%;
     }
@@ -385,7 +384,7 @@ put this in the same file as the rest so I don't have to edit each page. */
 
 /* mobile devices */
 @media only screen and (max-device-width: 480px) {
-    main-wrapper {
+    #main-wrapper {
         padding: 0 0.5em;
     }
 
@@ -394,7 +393,7 @@ put this in the same file as the rest so I don't have to edit each page. */
         width: 100%;
     }
     
-    main {
+    #content {
         float: none;
         width: 100%;
     }

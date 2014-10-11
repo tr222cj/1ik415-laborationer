@@ -17,6 +17,16 @@
         <link rel="apple-touch-icon" sizes="144x144" href="../pics/apple-touch-icon-144x144.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="../pics/apple-touch-icon-152x152.png" />
         <title>Kontakt - Tomas Vaedelund</title>
+        <script>
+            document.createElement("header" );
+            document.createElement("footer" );
+            document.createElement("section"); 
+            document.createElement("aside"  );
+            document.createElement("nav"    );
+            document.createElement("article"); 
+            document.createElement("hgroup" ); 
+            document.createElement("time"   );
+        </script>
     </head>
     <body>
         <div id="main-wrapper">
@@ -38,7 +48,9 @@
                 </ul>
             </nav>
 
-            <div id="content">
+            <!-- Använder html5s <main></main> istället för <div id="main"></div> -->
+            <!-- Från w3.org: Authors are advised to use ARIA role="main" attribute on the main element until user agents implement the required role mapping. -->
+            <main role="main">
 
                 <h1>Kontakta mig</h1>
 
@@ -70,7 +82,7 @@
                 
                 </form>
                 
-            </div>
+            </main>
 
             <!-- Använder html5s <footer></footer> istället för <div id="footer"></div> -->
             <footer>
