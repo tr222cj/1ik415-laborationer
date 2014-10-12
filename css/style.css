@@ -31,7 +31,7 @@
         text-transform: uppercase;
     }
     
-    #main-wrapper > nav {
+    nav {
         float: left;
         width: 20%;
         padding: 0.5em 0;
@@ -83,8 +83,7 @@
     }
     
     main h2, main h3 {
-        padding-top: 0.2em;
-        margin-top: 0.2em;
+        margin-top: 0.4em;
     }
     
     main h1 {
@@ -151,27 +150,57 @@
     }
     
     /* Blog */
-    main .blog-entry-header {
-        border-bottom: 1px dashed #000000;
+    .blog-entry h2 {
         background-image: url('pics/blog-entry.png');
         background-repeat: no-repeat;
-        background-position: 0;
-        text-indent: 1.5em;
-        margin-bottom: 0.2em;
+        background-position: 0 -5px;
+        text-indent: 35px;
     }
     
-    main footer {
+    .blog-entry h3 {
+        font-size: 1.2em;
+    }
+
+    .blog-entry footer {
         clear: both;
     }
 
-    main footer p {
+    .blog-entry footer p {
         font-style: italic;
-        padding-top: 0.5em;
-        text-align: right;
-        margin-bottom: 2em;
-        border-bottom: 1px dashed #000000;
+        border-bottom: 2px solid rgba(239, 236, 202, 1);
     }
     
+    .blog-body {
+        margin: 5px 0 10px 0;
+    }
+    
+    .blog-entry {
+        clear: both;
+    }
+    
+    /* comments */
+    .comment {
+        float: left;
+    }
+    
+    .comment:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .comment-author, .comment-text {
+        border-top: 3px solid rgba(239, 236, 202, 0.5);
+        padding: 10px 0;
+    }
+    
+    .comment-author {
+        width: 20%;
+        clear: right;
+    }
+
+    .comment-text {
+        width: 80%;
+    }
+
     /* Menu */
     nav ul { 
         width: 95%;
@@ -330,7 +359,7 @@ put this in the same file as the rest so I don't have to edit each page. */
         width: 100%;
     }
     
-     nav ul { 
+    nav ul { 
         width: 100%;
     }
     
@@ -388,6 +417,10 @@ put this in the same file as the rest so I don't have to edit each page. */
     
     img {
         max-width: 50%;
+    }
+    
+    .blog-entry h2 {
+        background-position: 0 -8px;
     }
 }
 
