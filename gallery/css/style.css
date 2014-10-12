@@ -26,8 +26,9 @@ main {
 }
 
 a.photo, .photo img {
-    position: relative;
     width: 200px;
+    transition: all 0.5s ease-in;
+    position: relative;
 }
 
 a.photo {
@@ -36,6 +37,7 @@ a.photo {
     background-color: white;
     padding: 10px;
     color: black;
+    -webkit-transition: all 0.5s ease-in;
 }
 
 a.photo:after {
@@ -56,6 +58,15 @@ a.photo {
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
 	transform: rotate(5deg);
+	-webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+a.photo.small {
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 a.photo:nth-child(3n+1) { /* each 3d, starting at 1 */
@@ -72,13 +83,12 @@ a.photo:nth-child(4n+2) { /* each 4th, starting at 2 */
 	transform: rotate(10deg);
 }
 
-a.photo:hover {
+a.photo:hover, a.photo:focus, a.photo:active {
     z-index: 99;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-
-a.photo:hover, .photo:hover img {
-    width: 300px;
+	-webkit-transform: rotate(0deg) scale(2);
+	-moz-transform: rotate(0deg) scale(2);
+	transform: rotate(0deg) scale(2);
+	-webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
 }
