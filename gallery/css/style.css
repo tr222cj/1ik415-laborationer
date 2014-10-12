@@ -25,7 +25,8 @@ main {
     margin: 40px 0;
 }
 
-.photo img, a.photo {
+a.photo, .photo img {
+    position: relative;
     width: 200px;
 }
 
@@ -50,10 +51,34 @@ a.small {
     font-size: 80%;
 }
 
+a.photo {
+    z-index: 2;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
 a.photo:nth-child(3n+1) { /* each 3d, starting at 1 */
-    background-color: red;
+    z-index: 3;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
 }
 
 a.photo:nth-child(4n+2) { /* each 4th, starting at 2 */
-    background-color: green;
+    z-index: 4;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+a.photo:hover {
+    z-index: 99;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+a.photo:hover, .photo:hover img {
+    width: 300px;
 }
