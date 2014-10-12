@@ -8,6 +8,9 @@ body {
 
 .photo-gallery {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 1.2em;
 }
 
 .photo-gallery h1 {
@@ -18,16 +21,20 @@ body {
     font-size: 1.5em;
 }
 
+main {
+    margin: 40px 0;
+}
+
 .photo img, a.photo {
     width: 200px;
 }
 
 a.photo {
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 10px 10px 20px 10px;
-    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    color: black;
 }
 
 a.photo:after {
@@ -39,8 +46,14 @@ a.small, .small img {
 }
 
 a.small {
-    padding: 5px 5px 10px 5px;
-    font-size: 0.6em;
+    padding: 5px;
+    font-size: 80%;
 }
 
+a.photo:nth-child(3n+1) { /* each 3d, starting at 1 */
+    background-color: red;
+}
 
+a.photo:nth-child(4n+2) { /* each 4th, starting at 2 */
+    background-color: green;
+}
