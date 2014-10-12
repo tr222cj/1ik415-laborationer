@@ -1,0 +1,46 @@
+/* Vaedelunds Gallery CSS */
+body {
+    width: 100%;
+    font-size: 100%;
+    font-family: "Over the Rainbow", cursive;
+    background-color: rgba(239, 236, 202, 1);
+}
+
+.photo-gallery {
+    text-align: center;
+}
+
+.photo-gallery h1 {
+    font-size: 2em;
+}
+
+.photo-gallery h2 {
+    font-size: 1.5em;
+}
+
+.photo img, a.photo {
+    width: 200px;
+}
+
+a.photo {
+    display: block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 10px 20px 10px;
+    margin: 10px;
+}
+
+a.photo:after {
+    content: attr(title);
+}
+
+a.small, .small img {
+    width: 100px;
+}
+
+a.small {
+    padding: 5px 5px 10px 5px;
+    font-size: 0.6em;
+}
+
+
